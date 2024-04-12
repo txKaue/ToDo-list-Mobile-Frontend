@@ -12,6 +12,9 @@
 .runtimeconfig.json
 .firebase/
 
+# Arquivos específicos
+src/config/FirebaseConfig.js
+
 # End of https://www.toptal.com/developers/gitignore/api/firebase
 
 # dependencies
