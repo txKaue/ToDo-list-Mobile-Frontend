@@ -27,7 +27,7 @@ export default function App() {
           <Stack.Screen
             name="Task"
             component={Task}
-            options={{ headerTintColor: "#120A8F", headerLeft: null}}
+            options={{ headerTintColor: "#120A8F", headerLeft: null, headerBackVisible: false}}
           />
           <Stack.Screen
             name="NewTask"

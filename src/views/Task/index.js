@@ -4,6 +4,8 @@ import { FIREBASE_AUTH, FIREBASE_DB } from "../../config/FirebaseConfig";
 import { FontAwesome, MaterialCommunityIcons } from "@expo/vector-icons";
 import { collection, getDocs, deleteDoc, doc } from "firebase/firestore";
 import styles from "./style";
+import { signOut } from "firebase/auth";
+
 
 
 const Task = ({ navigation, route }) => {
@@ -11,14 +13,14 @@ const Task = ({ navigation, route }) => {
 
     const auth = FIREBASE_AUTH;
 
-    function logout(){
-        signOut(auth).then(() => {
+    function logout() {
+        try {
+            signOut(auth);
             navigation.navigate('Login');
-        }).catch((error) => {
-            alert("Erro ao sair: ", error);
-q       });
+        } catch (error) {
+            alert("Erro ao sair: " + error.message);
+        }
     }
-
     
 
     async function deleteTask(id) {
@@ -70,12 +72,12 @@ q       });
                 )}
                 keyExtractor={(item) => item.id}
             />
-            <TouchableOpacity style={styles.buttonNewTask} onPress={() => navigation.navigate("NewTask", {idUser: user.id})}>
+            <TouchableOpacity style={styles.buttonNewTask} onPress={() => navigation.navigate("NewTask", {idUser: route.params.idUser})}>
                 <Text style={styles.iconButton}>+</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.logOut} onPress={() => logout()}>
-                <Text>
-                    
+            <TouchableOpacity style={styles.buttonLogOut} onPress={logout}>
+                <Text style={styles.iconButtonLogOut}>
+                    <MaterialCommunityIcons name="location-exit" size={23} color="#f92e6a"></MaterialCommunityIcons>
                 </Text>
 
             </TouchableOpacity>
