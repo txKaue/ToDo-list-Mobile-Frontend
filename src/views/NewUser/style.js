@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 30,
-        color: "#120A8F",
+        color: "#FF0000",
         marginBottom: 10,
         fontWeight: "bold",
     },
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
         padding: 10,
         height: 50,
         borderBottomWidth: 1,
-        borderBottomColor: "#120A8F",
+        borderBottomColor: "#FF0000",
         marginLeft: "auto",
         marginRight: "auto",
         color: "#4d5156",
@@ -30,12 +30,12 @@ const styles = StyleSheet.create({
         height: 50,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#120A8F",
+        backgroundColor: "#FF0000",
         borderRadius: 50,
         marginTop: 30,
     },
     textButtonRegister:{
-        color: "#ffffff",
+        color: "#A52A2A",
         fontWeight: "bold",
         fontSize: 17,
     },
@@ -52,10 +52,10 @@ const styles = StyleSheet.create({
     },
     login:{
         marginTop: 20,
-        color: "#4d5156",
+        color: "#A52A2A",
     },
     linkSubscribe: {
-        color:"#120a8f",
+        color:"#A52A2A",
         fontSize: 16
     }
 })

@@ -28,9 +28,9 @@ const NewUser = ({navigation}) => {
 
     return (
         <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? "padding" : "height"} style={styles.container}>
-            <Text style={styles.title}>Criar uma Conta TASK</Text>
-            <TextInput style={styles.input} placeholder="Enter com seu E-mail" keyboardType="email-address" onChangeText={(text) => setEmail(text)} value={email}></TextInput>
-            <TextInput style={styles.input} placeholder="Enter com sua Senha" secureTextEntry={true} onChangeText={(text) => setSenha(text)} value={senha}></TextInput>
+            <Text style={styles.title}>Crie uma conta</Text>
+            <TextInput style={styles.input} placeholder="Entre com um endereço E-mail" keyboardType="email-address" onChangeText={(text) => setEmail(text)} value={email}></TextInput>
+            <TextInput style={styles.input} placeholder="Entre com sua Senha" secureTextEntry={true} onChangeText={(text) => setSenha(text)} value={senha}></TextInput>
             {errorRegister === true ?
                 <View style={styles.contextAlert}>
                     <MaterialCommunityIcons name="alert-circle" size={24} color="#bdbdbd" />

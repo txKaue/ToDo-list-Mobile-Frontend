@@ -40,9 +40,9 @@ const Login = ({ navigation, }) => {
 
     return (
         <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? "padding" : "height"} style={styles.container}>
-            <Text style={styles.title}>Task</Text>
-            <TextInput style={styles.input} placeholder="Enter com seu E-mail" keyboardType="email-address" onChangeText={(text) => setEmail(text)} value={email}></TextInput>
-            <TextInput style={styles.input} placeholder="Enter com sua Senha" secureTextEntry={true} onChangeText={(text) => setPassword(text)} value={password}></TextInput>
+            <Text style={styles.title}>LOGIN</Text>
+            <TextInput style={styles.input} placeholder="Entre com um endereço E-mail" keyboardType="email-address" onChangeText={(text) => setEmail(text)} value={email}></TextInput>
+            <TextInput style={styles.input} placeholder="Entre com sua Senha" secureTextEntry={true} onChangeText={(text) => setPassword(text)} value={password}></TextInput>
             {errorLogin === true ?
                 <View style={styles.contextAlert}>
                     <MaterialCommunityIcons name="alert-circle" size={24} color="#bdbdbd" />
