@@ -14,6 +14,13 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: "#120A8F"
     },
+    titulo:{
+        width: "90%",
+        marginTop: 20,
+        marginLeft: 20,
+        fontSize: 22,
+        color: "#120A8F"
+    },
     input:{
         width: "90%",
         marginTop: 10,

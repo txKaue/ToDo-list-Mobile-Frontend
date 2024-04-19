@@ -3,12 +3,12 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor:"#FF0000",
+        backgroundColor:"grey",
         paddingTop: 20,
 
     },
     iconButton:{
-        color: "#FF0000",
+        color: "#120A8F",
         fontSize: 25,
         fontWeight: "bold"
     },
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
         height: 60,
         bottom: 30,
         left: 20,
-        backgroundColor: "#FF0000",
+        backgroundColor: "white",
         borderRadius: 50,
         justifyContent: "center",
         alignItems: "center",
@@ -31,16 +31,26 @@ const styles = StyleSheet.create({
         right: 20,
         justifyContent: "center",
         alignItems: "center",
+        backgroundColor: "white",
+    },
+    reloadButton:{
+        position: "absolute",
+        width: 60,
+        height: 60,
+        bottom: 30,
+        right: 148,
+        justifyContent: "center",
+        alignItems: "center",
     },
     iconButtonLogOut:{
-        color: "#FF0000",
+        color: "#120A8F",
         fontSize: 30,
         fontWeight: "bold"
     },
     DescriptionTask:{
         width: "75%",
         alignContent: "flex-start",
-        backgroundColor: "#FF0000",
+        backgroundColor: "white",
         paddingHorizontal: 20,
         padding: 12,
         borderRadius: 50,
